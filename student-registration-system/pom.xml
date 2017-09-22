@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>year4.assignment1</groupId>
+  <artifactId>student-registration-system</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>student-registration-system</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <repositories>
+    <repository>
+        <id>my-mvn-repo</id>
+        <url>file///C:/Users/cmcca/Dropbox/my-mvn-repo</url>
+    </repository>
+  </repositories>
+  
+   <distributionManagement>  
+    <repository>
+        <id>my-mvn-repo</id>
+        <url>https://www.dropbox.com/sh/j7eguw2q0ufumm3/AABAc1Md3GOxtGnabJKOYZXla?dl=0</url>
+    </repository>
+	</distributionManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>joda-time</groupId>
+      <artifactId>joda-time</artifactId>
+      <version>2.9.9</version>
+	</dependency>
+  </dependencies>
+ 
+</project>
