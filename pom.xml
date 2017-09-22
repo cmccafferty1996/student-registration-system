@@ -14,17 +14,12 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   
-  <repositories>
-    <repository>
-        <id>my-mvn-repo</id>
-        <url>file///C:/Users/cmcca/Dropbox/my-mvn-repo</url>
-    </repository>
-  </repositories>
-  
    <distributionManagement>  
     <repository>
-        <id>my-mvn-repo</id>
-        <url>https://www.dropbox.com/sh/j7eguw2q0ufumm3/AABAc1Md3GOxtGnabJKOYZXla?dl=0</url>
+        <id>dropbox-maven-repo</id>
+        <name>My Dropbox repo</name>
+        <url>https://www.dropbox.com/sh/ec6dfjqy0rwvx84/AABOsMwkcFNJt-0o0Io7vYk2a?dl=0</url>
+        <layout>default</layout>
     </repository>
 	</distributionManagement>
 
