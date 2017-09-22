@@ -4,4 +4,6 @@ jdk:
 
 build:
     ci:
-       - mvn install
+       -mkdir -p shippable/testresults
+       -mkdir -p shippable/codecoverage
+       - mvn clean cobertura:cobertura
