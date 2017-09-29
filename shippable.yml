@@ -4,13 +4,10 @@ jdk:
 
 build:
     ci:
-    #Create folders for test and code coverage
+    #Create folders for test results
     - mkdir -p shippable/testresults
-    - mkdir -p shippable/codecoverage
-
-    #Run test and code coverage and output results to the right folder
-    - mvn install -DskipTest=true
+    
+    #Run test and install and output results to the right folder
+    - mvn install
     - mvn test
-    - mvn clean cobertura:cobertura
     - cp -r target shippable/testresults
-    - cp -r target shippable/codecoverage
